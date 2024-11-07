@@ -24,9 +24,10 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NFCReaderUsageDescription</key>
+	<string>We need to use NFC</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
-	  <!-- Do not change NSAllowsArbitraryLoads to true, or you will risk app rejection! -->
 		<key>NSAllowsArbitraryLoads</key>
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
@@ -48,5 +49,21 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>com.apple.developer.nfc.readersession.iso7816.select-identifiers</key>
+  <array>
+    <string>D2760000850100</string>
+    <string>D2760000850101</string>
+  </array>
+  <key>com.apple.developer.nfc.readersession.felica.systemcodes</key>
+  <array>
+    <string>8005</string>
+    <string>8008</string>
+    <string>0003</string>
+    <string>fe00</string>
+    <string>90b7</string>
+    <string>927a</string>
+    <string>12FC</string>
+    <string>86a7</string>
+  </array>
 </dict>
 </plist>
